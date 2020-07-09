@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+*{font-family: 'Nanum Gothic', sans-serif; margin:0; padding:0; box-sizing: 0; color: #fff;}
+a {text-decoration: none;}
+
+/* HEADER */
+header {position: fixed; z-index: 999; width: 100vw; height:50px; background-color: #fff;}
+header > h1 {position:fixed; left: 15%; top: 5px}
+header > h1 > a {color:#338dd6;}
+header > div {position:fixed; right: 15%; top: 10px}
+header > div > ul {list-style-type: none; padding-top: 5px;}
+header > div > ul > li {float: left; font-size: 15px; font-weight: 600; text-align: center;margin-right: 20px;}
+header > div > ul > li:last-child {margin-right: 0px;}
+header > div > ul > li > a {color:#338dd6;}
+
+/* MAIN-VISUAL */
+section > article.main-visual {
+      display: grid;
+      grid-template-rows: 100vh;
+      overflow: hidden;
+      box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.5);}
+section > article.main-visual > video.video-bg {
+      grid-area: var(--fullGrid);
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      z-index: -1;
+}
+section > article.main-visual > video.video-bg::-webkit-media-controls {display: none !important;}
+section > article.main-visual > div.main {
+      position: absolute;
+      width: 100vw; height: 100vh;
+      top:0;
+      grid-area: var(--fullGrid);
+      display: grid;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.55);}
+section > article.main-visual > div.main > dl > dt > h2 {font-size: 70px; margin-bottom: 10px; transition: all 300ms ease-in-out;}
+section > article.main-visual > div.main > dl > dt > h2:hover {letter-spacing: 2px;}
+section > article.main-visual > div.main > dl > dd > p {font-size: 20px; font-weight: 700; line-height: 30px; color:#dbe8ec; margin-bottom: 30px;}
+section > article.main-visual > div.main > div {padding-top: 30px;}
+section > article.main-visual > div.main > div > a {display: inline-block; background-color: rgba(255, 255, 255, 0.83); text-align: center; width: 300px; height: 80px; border-radius: 15px; transition: all 300ms ease-in-out;}
+section > article.main-visual > div.main > div > a:hover {background-color: #fff; transform: scale(1.1);}
+section > article.main-visual > div.main > div > a > span {font-size: 25px; line-height: 80px; font-weight: 600;position: relative; color:#338dd6;}
+
+
+/* 반응형 */
+@media (max-width:767px){
+      header {padding:0; }
+      header > h1 {padding:0; font-size: 1.6rem; top: 5px; left:4%;}
+      header > div {top: 5px; right:4%;}
+      header > div > ul {margin-top: 5px;}
+      header > div > ul > li {font-size: 0.8rem;}
+  
+      section > article.main-visual > div.main > dl > dt > h2 {font-size: 3rem;}
+      section > article.main-visual > div.main > dl > dd > p {font-size: 1rem;}
+}

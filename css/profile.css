@@ -1,0 +1,74 @@
+
+/* HEADER */
+header {position: fixed; z-index: 999; width: 100vw; height:50px; background-color: #fff;}
+header > h1 {position:fixed; left: 15%; top: 5px}
+header > h1 > a {color:#338dd6;}
+header > div {position:fixed; right: 15%; top: 10px}
+header > div > ul {list-style-type: none; padding-top: 5px;}
+header > div > ul > li {float: left; font-size: 15px; font-weight: 600; text-align: center;margin-right: 20px;}
+header > div > ul > li:last-child {margin-right: 0px;}
+header > div > ul > li > a {color:#338dd6;}
+
+
+/* Profile Article */
+section > article.profile {
+      height: 100vh;
+      background-color: #338dd6;
+}
+
+section > article.profile > div {
+      width: 1000px; margin: 0 auto; padding-top: 150px;
+}
+
+/* box-content */
+div.box-content {margin-bottom: 60px; height:450px; background-color: rgba(255, 255, 255, 0.5); border-radius: 16px; box-shadow: rgba(255, 255, 255, 0.5); transition: 800ms cubic-bezier(0.785, 0.135, 0.15, 0.86);}
+div.box-content:hover {background-color: rgba(255, 255, 255, 0.9); transform: scale(1.05); transition: 800ms cubic-bezier(0.785, 0.135, 0.15, 0.86);}
+div.box-content > div.box-text {text-align: left;}
+div.box-content > div.box-text > img {width: 258px; border-radius: 50%; margin: 90px 110px 95px 170px; float: left; opacity: 0.9;}
+div.box-content > div.box-text > h2 {color: #333dd6;font-size: 33px; font-weight: 700; padding: 130px 0 33px 0;}
+div.box-content > div.box-text > h2 > span {color: #333dd6;font-size: 16px; font-weight: 400; padding-left: 10px;}
+div.box-content > div.box-text > p {color: #333dd6;font-size: 14px; line-height: 25px; letter-spacing: 1px;}
+div.box-content > div.box-text > p > span.hi {color:#333dd6; font-size: 20px; font-weight: 700;}
+
+/* text */
+section > article.profile > div > div.text-hi {width: 800px; margin: 0 auto;}
+section > article.profile > div > div > dl > dt {margin-bottom: 20px; text-align: center;}
+section > article.profile > div > div > dl > dt > h2 {font-size: 25px; line-height: 50px; font-weight: 400;}
+section > article.profile > div > div > dl > dt > h2 > p:first-child {font-size: 40px; font-weight: 700;}
+section > article.profile > div > div > dl > dd {line-height: 30px; float: left;}
+section > article.profile > div > div > dl > dd:last-child {text-align: right; margin-left: 80px;}
+.my-title{font-size: 19px; font-weight: 700; margin-right: 4px;}
+
+
+
+
+/* 반응형 */
+@media (max-width:767px){
+      header {padding:0;}
+      header > h1 {padding:0; font-size: 1.6rem; top: 5px; left:4%;}
+      header > div {top: 5px; right:4%;}
+      header > div > ul {margin-top: 5px;}
+      header > div > ul > li {font-size: 0.8rem;}
+
+      section > article.profile {
+            height: 100vh;
+      }
+      section > article.profile > div {
+            width: 100vw; margin: 0 auto; padding-top: 75px;
+      }
+      div.box-content {margin: 30px auto; height:225px; width: 340px; height: 180px;}
+      div.box-content > div.box-text {text-align: left;}
+      div.box-content > div.box-text > img {width: 129px; margin: 3% 3%; float: left;}
+      div.box-content > div.box-text > h2 {color: #333dd6;font-size: 17px; font-weight: 700; padding: 10% 0 0 0;}
+      div.box-content > div.box-text > h2 > span {color: #333dd6;font-size: 8px; font-weight: 400; padding-left: 5px;}
+      div.box-content > div.box-text > p {color: #333dd6;font-size: 7px; line-height: 12px; letter-spacing: 1px;}
+      div.box-content > div.box-text > p.hi {color:#333dd6; font-size: 10px; font-weight: 700;}
+
+      section > article.profile > div > div.text-hi {width: 278px;}
+      section > article.profile > div > div > dl > dt {margin-bottom: 10px;}
+      section > article.profile > div > div > dl > dt > h2 {font-size: 14px; line-height: 25px;}
+      section > article.profile > div > div > dl > dt > h2 > p:first-child {font-size: 25px;}
+      section > article.profile > div > div > dl > dd {margin-bottom: 5px; font-size: 7px;}
+      section > article.profile > div > div > dl > dd:last-child {margin-left:0px; text-align: left;}
+      .my-title{font-size: 9px; font-weight: 700; margin-right: 4px;}
+}
