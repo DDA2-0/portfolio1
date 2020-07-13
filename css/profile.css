@@ -24,7 +24,7 @@ section > article.profile > div {
 div.box-content {margin-bottom: 60px; height:450px; background-color: rgba(255, 255, 255, 0.5); border-radius: 16px; box-shadow: rgba(255, 255, 255, 0.5); transition: 800ms cubic-bezier(0.785, 0.135, 0.15, 0.86);}
 div.box-content:hover {background-color: rgba(255, 255, 255, 0.9); transform: scale(1.05); transition: 800ms cubic-bezier(0.785, 0.135, 0.15, 0.86);}
 div.box-content > div.box-text {text-align: left;}
-div.box-content > div.box-text > img {width: 258px; border-radius: 50%; margin: 90px 110px 95px 170px; float: left; opacity: 0.9;}
+div.box-content > div.box-text > img {width: 258px; margin: 90px 110px 95px 170px; float: left; opacity: 0.9;}
 div.box-content > div.box-text > h2 {color: #333dd6;font-size: 33px; font-weight: 700; padding: 130px 0 33px 0;}
 div.box-content > div.box-text > h2 > span {color: #333dd6;font-size: 16px; font-weight: 400; padding-left: 10px;}
 div.box-content > div.box-text > p {color: #333dd6;font-size: 14px; line-height: 25px; letter-spacing: 1px;}
